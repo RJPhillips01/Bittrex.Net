@@ -8,6 +8,11 @@ namespace Bittrex.Net.Objects
     public class BittrexStreamFill
     {
         /// <summary>
+        /// Id of the fill
+        /// </summary>
+        [JsonProperty("I")]
+        public string Id { get; set; }
+        /// <summary>
         /// Timestamp of the fill
         /// </summary>
         [JsonProperty("T"), JsonConverter(typeof(TimestampConverter))]
